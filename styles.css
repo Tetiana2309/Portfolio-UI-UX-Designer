@@ -298,7 +298,29 @@ body {
     gap: var(--gap-xl);
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .social-button {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: var(--gap-md);
+        /* Дополнительные стили или изменения по необходимости */
+    }
+}
 
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .social-button {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: var(--gap-sm);
+        /* Дополнительные стили или изменения по необходимости */
+    }
+}
 
 .main,
 .social-button {
@@ -311,6 +333,28 @@ body {
     gap: var(--gap-31xl);
     max-width: 100%;
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .social-button {
+        justify-content: center;
+        gap: var(--gap-md);
+        /* Дополнительные стили или изменения по необходимости */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .social-button {
+        justify-content: center;
+        gap: var(--gap-sm);
+        /* Дополнительные стили или изменения по необходимости */
+    }
+}
+
+
+
+
 
 .social-links-frame {
     display: flex;
