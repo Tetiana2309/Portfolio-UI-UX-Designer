@@ -345,21 +345,6 @@ body {
     align-items: center;
 }
 
-.scroll {
-    width: 100%;
-    position: relative;
-    background-color: #000;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    gap: var(--gap-132xl);
-    letter-spacing: normal;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color);
-    font-family: var(--font-gothic-a1);
-}
 
 .scroll:hover,
 .scroll:focus {
@@ -369,7 +354,7 @@ body {
 .main {
     width: 100%;
     position: relative;
-    background-color: #000;
+
     overflow: hidden;
     flex-direction: column;
     justify-content: flex-start;
