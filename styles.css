@@ -3,6 +3,8 @@ body {
     line-height: normal;
 }
 
+
+
 :root {
     /* fonts */
     --font-gothic-a1: "Gothic A1";
@@ -33,80 +35,140 @@ body {
 }
 
 
+
 .tetiana-varzonova,
 .uiux-designer {
-
     position: relative;
     letter-spacing: 0.1em;
     line-height: 26px;
     white-space: nowrap;
 }
 
-.frame-c {
-    width: 379px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: var(--gap-34xl);
-    max-width: 100%;
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+
+    .tetiana-varzonova,
+    .uiux-designer {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+    }
 }
 
-.frame-a,
-.frame-b {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 100%;
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+
+    .tetiana-varzonova,
+    .uiux-designer {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+    }
 }
 
-.frame-b {
-    flex: 1;
-    justify-content: space-between;
-    gap: var(--gap-xl);
+
+
+
+.tetiana-varzonova {
+    margin-left: 100px;
+}
+
+.uiux-designer {
+    margin-right: 100px;
 }
 
 .frame-a {
-    width: 1240px;
-    justify-content: flex-start;
-    padding: 0 0 0 17px;
-    box-sizing: border-box;
-    text-align: left;
+    width: 100%;
+    padding: 0;
+    text-align: center;
     font-size: var(--font-size-5xl);
     color: var(--color);
     font-family: var(--font-gothic-a1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .frame-a {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .frame-a {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
 }
 
 
 
-.bringing-ideas-to,
 .web-magic {
-    margin: 0;
-    width: 482px;
     position: relative;
-    font-size: inherit;
+    font-size: 64px;
     letter-spacing: 0.1em;
-    line-height: 100px;
+    display: block;
     font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
+    font-family: "Gothic A1", sans-serif;
     max-width: 100%;
+    color: var(--1-);
+    line-height: 1.56;
+    width: 100%;
+
 }
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .web-magic {
+        font-size: 36px;
+
+    }
+}
+
 
 .bringing-ideas-to {
-    height: 200px;
-    width: 1029px;
     flex-shrink: 0;
-
-
-}
-
-
-.linked-in-instagram-behance {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 156%;
+    letter-spacing: 0.1em;
+    color: var(--1-);
+    height: auto;
+    width: 100%;
+    max-width: 1029px;
     margin-left: 112px;
+
 }
 
-.linked-in-instagram-behance,
+
+@media only screen and (max-width: 768px) {
+    .bringing-ideas-to {
+        font-size: 36px;
+        margin-left: 10px;
+
+    }
+}
+
+
+
+
+
+
+
 .frame-d,
 .web-magic-frame {
     display: flex;
@@ -114,26 +176,155 @@ body {
     max-width: 100%;
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+
+    .frame-d {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+
+    .frame-d {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .web-magic-frame {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Выравниваем по левому краю */
+    }
+
+    .frame-d {
+        width: 100%;
+        text-align: left;
+        /* Выравниваем текст по левому краю */
+    }
+
+    .web-magic {
+        margin: 0;
+        /* Сбрасываем внешние отступы у заголовка "WEB MAGIC" */
+    }
+}
+
+
+
+.frame-d h1.web-magic {
+    margin-bottom: 10px;
+
+}
+
+.frame-d h1.bringing-ideas-to {
+    margin-top: 10px;
+
+}
+
+
 .frame-d {
     width: 1140px;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 30px;
+
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .frame-d {
+        width: calc(100% - 20px);
+        /* Установите отступ от края на ваш выбор */
+        margin-left: 10px;
+        /* Половина отступа для выравнивания заголовков */
+        margin-right: 10px;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .frame-d {
+        width: calc(100% - 20px);
+        /* Установите отступ от края на ваш выбор */
+        margin-left: 10px;
+        /* Половина отступа для выравнивания заголовков */
+        margin-right: 10px;
+        /* Половина отступа для выравнивания заголовков */
+        /* Другие стили для мобильных устройств, если необходимо */
+    }
+}
+
 
 .web-magic-frame {
     width: 1240px;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 0 0 83px;
+    padding: 30px 0 30px;
     box-sizing: border-box;
     text-align: left;
-    font-size: var(--font-size-45xl);
+    font-size: 64px;
     color: var(--color);
     font-family: var(--font-gothic-a1);
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .web-magic-frame {
+        font-size: 40px;
+        /* Измените размер шрифта по необходимости для планшетов */
+    }
+}
 
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .web-magic-frame {
+        font-size: 32px;
+        /* Измените размер шрифта по необходимости для мобильных устройств */
+    }
+}
+
+
+.social-button {
+    width: 1240px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+}
+
+
+
+.main,
+.social-button {
+    display: flex;
+    align-items: center;
+}
+
+.social-button {
+    justify-content: flex-start;
+    gap: var(--gap-31xl);
+    max-width: 100%;
+}
+
+.social-links-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 26px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .icon-behance,
@@ -214,19 +405,7 @@ body {
     /* Замените fill на свой цвет иконки */
 }
 
-.social-links-frame {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 26px;
-}
 
-.link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .contact-me {
     position: relative;
@@ -296,27 +475,11 @@ body {
     max-width: 100%;
 }
 
-.scroll {
-    width: 100%;
-    position: relative;
-    background-color: #000;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    gap: var(--gap-132xl);
-    letter-spacing: normal;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color);
-    font-family: var(--font-gothic-a1);
-    text-decoration: none;
-}
 
-.scroll:hover,
-.scroll:focus {
-    color: #c0392b;
-}
+
+
+
+
 
 .main,
 .social-button-scroll {
@@ -324,49 +487,41 @@ body {
     align-items: center;
 }
 
-.social-button-scroll {
-    width: 1240px;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: var(--gap-xl);
-}
-
-.scroll {
-    position: relative;
-    letter-spacing: 0.1em;
-    line-height: 24px;
-    font-weight: 500;
-}
-
-.text-scroll-label,
-.main,
-.social-button-scroll {
-    display: flex;
-    align-items: center;
-}
 
 
-.scroll:hover,
-.scroll:focus {
-    color: #c0392b;
-}
+
+
 
 .main {
     width: 100%;
     position: relative;
-
     overflow: hidden;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 60px 20px;
+    padding: 40px 20px;
     box-sizing: border-box;
-    gap: var(--gap-132xl);
+    gap: var(--gap-mobile);
     letter-spacing: normal;
     text-align: left;
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-mobile);
     color: var(--color);
     font-family: var(--font-gothic-a1);
     transition: transform 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 20px;
+        /* Ваши стили для планшетов */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .main {
+        padding: 10px;
+        /* Ваши стили для мобильных устройств */
+    }
 }
 
 /*==============ABOUT ME================*/
@@ -385,6 +540,175 @@ body {
 
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .about-me-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .about-me-title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        /* Добавляем отступ снизу в мобильной версии */
+    }
+}
+
+.list-about-me {
+    margin-right: 312px;
+    width: 504px;
+    padding-right: 20px;
+    flex: 1;
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .list-about-me {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .list-about-me {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+
+.frame-greetings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .frame-greetings {
+        flex-direction: column;
+        align-items: flex-start;
+
+        /* Установите желаемый размер зазора между элементами */
+        min-width: 100%;
+        /* Ширина минимальная на весь экран */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .frame-greetings {
+        flex-direction: column;
+        align-items: center;
+
+        /* Установите желаемый размер зазора между элементами */
+        min-width: 100%;
+        /* Ширина минимальная на весь экран */
+    }
+}
+
+
+
+.frame-greetings {
+    width: 476px;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .frame-greetings {
+        width: 100%;
+        /* Ширина 100% для полного заполнения экрана на планшетах */
+        padding: 15px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .frame-greetings {
+        padding: 10px;
+        width: 100%;
+        /* Ширина 100% для полного заполнения экрана на мобильных устройствах */
+    }
+}
+
+
+
+.frame-greetings {
+    width: 504px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-81xl);
+    min-width: 504px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .frame-greetings {
+        width: 100%;
+        /* Ширина 100% для полного заполнения экрана на планшетах */
+        min-width: auto;
+        /* Сброс минимальной ширины */
+        gap: 0;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .frame-greetings {
+        width: 100%;
+        /* Ширина 100% для полного заполнения экрана на мобильных устройствах */
+        min-width: auto;
+        /* Сброс минимальной ширины */
+        gap: 0;
+    }
+}
+
+.about-me {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 60px 100px 60px;
+    gap: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color);
+    font-family: var(--body);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        justify-content: flex-start;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .about-me {
+        padding: 40px 20px;
+        justify-content: center;
+    }
+}
+
+
+
 .about-me-title {
     font-family: "Gothic A1", sans-serif;
     margin: 0;
@@ -397,6 +721,24 @@ body {
 
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .about-me-title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .about-me-title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+}
+
+
+
 .greetings-to-you,
 .i-am-inspired,
 .my-experience-is {
@@ -404,6 +746,38 @@ body {
     position: relative;
     letter-spacing: 0.2em;
     line-height: 26px;
+    font-family: "Gothic A1", sans-serif;
+
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+
+    .greetings-to-you,
+    .i-am-inspired,
+    .my-experience-is {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .greetings-to-you,
+    .i-am-inspired,
+    .my-experience-is {
+        align-self: stretch;
+        position: relative;
+        letter-spacing: 0.2em;
+        line-height: 24px;
+        font-family: "Gothic A1", sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0;
+        font-size: 14px;
+        /* Дополнительные стили или изменения по необходимости */
+    }
 }
 
 .my-experience-is {
@@ -411,26 +785,74 @@ body {
     display: inline-block;
 }
 
-
-.container {
-    display: flex;
-}
-
-.list-about-me,
-.subframe-foto {
-    flex: 1;
-}
-
 .list-about-me {
     margin-right: 312px;
-    width: 504px;
-    padding-right: 20px;
 
+    padding-right: 20px;
+    flex: 1;
+
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .list-about-me {
+        margin-right: 10px;
+        /* Уменьшаем отступ справа для планшетов */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .list-about-me {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 5px;
+        /* Уменьшаем отступ справа для мобильных устройств */
+    }
 }
 
 .list-about-me>div {
     margin-bottom: 30px;
 }
+
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .list-about-me>div {
+        margin-bottom: 10px;
+        /* Измените отступ для планшетов по вашему усмотрению */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .list-about-me>div {
+        margin-bottom: 5px;
+        /* Измените отступ для мобильных устройств по вашему усмотрению */
+    }
+}
+
+.container {
+    display: flex;
+}
+
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Изменение направления flex контейнера на вертикальное */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        /* Изменение направления flex контейнера на вертикальное */
+    }
+}
+
 
 .header-photo {
     height: 43px;
@@ -441,26 +863,44 @@ body {
     gap: 26px;
 }
 
-.frame-greetings {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .header-photo {
+        height: 36px;
+        gap: 20px;
+    }
 }
 
-.frame-greetings {
-    width: 476px;
-    justify-content: flex-start;
-
-    max-width: 100%;
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .header-photo {
+        height: 30px;
+        gap: 15px;
+    }
 }
 
-.frame-greetings {
-    width: 504px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-81xl);
-    min-width: 504px;
+
+
+.subframe-foto {
+    flex: 1;
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .subframe-foto {
+        flex: 1;
+        /* Сохранить текущее значение flex для планшетов */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .subframe-foto {
+        flex: 1;
+        /* Сохранить текущее значение flex для мобильных устройств */
+    }
+}
+
 
 .foto-icon {
     align-self: stretch;
@@ -471,6 +911,34 @@ body {
     max-height: 100%;
     object-fit: cover;
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .foto-icon {
+        max-width: 100%;
+        /* Сделать изображение 100% ширины в пределах родительского контейнера */
+        max-height: auto;
+        /* Автоматическая высота, чтобы сохранить пропорции изображения */
+        object-fit: cover;
+        /* Заполнить контейнер, сохраняя пропорции */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .foto-icon {
+        max-width: 100%;
+        /* Сделать изображение 100% ширины в пределах родительского контейнера */
+        max-height: auto;
+        /* Автоматическая высота, чтобы сохранить пропорции изображения */
+        object-fit: cover;
+        /* Заполнить контейнер, сохраняя пропорции */
+        align-items: center;
+    }
+}
+
+
+
 
 .about-me,
 .subframe-foto {
@@ -491,23 +959,44 @@ body {
     color: red;
 }
 
-.about-me {
-    width: 100%;
-    position: relative;
-    background-color: #000;
-    overflow: hidden;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 60px 100px 61px;
-    gap: 20px;
-    letter-spacing: normal;
-    text-align: left;
-
-    color: var(--color);
-    font-family: var(--body);
-    transition: transform 0.5s ease-in-out;
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .subframe-foto {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 var(--padding-sm);
+        min-width: 0;
+        font-size: var(--font-size-mobile);
+        color: red;
+    }
 }
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .subframe-foto {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 var(--padding-xs);
+        min-width: 0;
+        font-size: var(--font-size-small);
+        color: red;
+    }
+}
+
+
+
+
+.my-experience-is {
+    height: 130px;
+    display: inline-block;
+}
+
+
+
 
 
 /*=====================MY_SERVICES===================*/
@@ -553,6 +1042,11 @@ body {
     flex-shrink: 0;
 }
 
+
+
+
+
+
 .my-services1 {
     font-family: "Gothic A1", sans-serif;
     margin: 0;
@@ -564,28 +1058,90 @@ body {
     letter-spacing: 0.1em;
 }
 
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .my-services1 {
+        font-size: 24px;
+        line-height: 120%;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .my-services1 {
+        font-size: 24px;
+        line-height: 120%;
+    }
+}
+
+
 .affordable-web-design {
-
-
-
     font-family: "Gothic A1", sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 108%;
-    letter-spacing: 0.1em;
-
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    line-height: 26px;
+    font-family: "Gothic A1", sans-serif;
 
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .affordable-web-design {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .affordable-web-design {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+
 
 .my-services-label {
     align-self: stretch;
     display: flex;
     flex-direction: row;
-    align-items: center;
+
     justify-content: space-between;
     gap: var(--gap-xl);
     max-width: 100%;
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .my-services-label {
+        flex-direction: column;
+        /* Изменяем направление flex на вертикальное */
+
+        /* Выравниваем элементы по центру по вертикали */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .my-services-label {
+        flex-direction: column;
+        /* Изменяем направление flex на вертикальное */
+
+        /* Выравниваем элементы по центру по вертикали */
+    }
+}
+
+
+
+
+.empty-frame,
+.inner-frame {
+    justify-content: flex-start;
+}
+
 
 .frame-line-split {
     position: absolute;
@@ -598,6 +1154,8 @@ body {
     height: 26px;
 }
 
+
+
 .creating-dream {
     position: absolute;
     top: 34px;
@@ -607,6 +1165,10 @@ body {
     width: 1px;
     height: 167px;
 }
+
+
+
+
 
 .line-frame {
     height: 200px;
@@ -623,6 +1185,23 @@ body {
     flex-shrink: 0;
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .creating-websites-from {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .creating-websites-from {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+
 .landing-page-frame {
     flex: 1;
     border-radius: var(--br-3xs);
@@ -634,6 +1213,8 @@ body {
     padding: var(--padding-16xl);
     font-size: var(--body-size);
 }
+
+
 
 .redesign-frame {
     width: 314px;
@@ -648,7 +1229,6 @@ body {
     background-position: top;
 
 }
-
 
 .redesign-frame::before {
     content: '';
@@ -666,13 +1246,9 @@ body {
     /* Чтобы гифка занимала 100% ширины родительского блока */
 }
 
-.creating-frame,
-.empty-frame,
-.inner-frame {
-    display: flex;
-    align-items: flex-start;
-    max-width: 100%;
-}
+
+
+
 
 .creating-frame {
     width: 946px;
@@ -683,16 +1259,14 @@ body {
     color: var(--color-white);
 }
 
-.empty-frame,
-.inner-frame {
-    justify-content: flex-start;
-}
 
 .empty-frame {
     width: 1156px;
     flex-direction: column;
     gap: var(--gap-97xl);
 }
+
+
 
 .inner-frame {
     width: 1240px;
@@ -702,6 +1276,58 @@ body {
     color: var(--color);
     font-family: var(--body);
 }
+
+
+.creating-frame,
+.empty-frame,
+.inner-frame {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+
+
+.creating-frame {
+    width: 946px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    font-size: var(--font-size);
+    color: var(--color-white);
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .creating-frame {
+        width: 100%;
+        /* Занимает 100% ширины экрана */
+        flex-direction: column;
+        /* Изменяем направление flex на вертикальное */
+        justify-content: center;
+        /* Выравниваем элементы по центру по вертикали */
+        gap: 30px;
+        /* Задаем отступ между элементами */
+        align-items: center;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .creating-frame {
+        width: 100%;
+        /* Занимает 100% ширины экрана */
+        flex-direction: column;
+        /* Изменяем направление flex на вертикальное */
+        justify-content: center;
+        /* Выравниваем элементы по центру по вертикали */
+        gap: 30px;
+        /* Задаем отступ между элементами */
+    }
+}
+
+
+
 
 .creating-website {
     position: relative;
@@ -722,6 +1348,7 @@ body {
 
 }
 
+
 .line-group {
     align-self: stretch;
     display: flex;
@@ -732,11 +1359,6 @@ body {
     height: 200px;
     width: 14px;
     position: relative;
-}
-
-.my-services {
-    display: flex;
-    align-items: center;
 }
 
 .my-services {
@@ -751,11 +1373,19 @@ body {
     gap: var(--gap-21xl);
     letter-spacing: normal;
     text-align: left;
-
+    display: flex;
+    align-items: center;
     color: red;
     font-family: var(--body);
     transition: transform 0.5s ease-in-out;
 }
+
+
+
+
+
+
+
 
 /*=================PORTFOLIO==============*/
 body {
@@ -784,23 +1414,94 @@ body {
 .lending-page-for,
 .portfolio {
     position: relative;
-    letter-spacing: 0.1em;
-    line-height: 50px;
+
 }
 
 .lending-page-for {
-    font-size: var(--font-size);
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.2em;
     line-height: 26px;
-    color: #fff;
+    font-family: "Gothic A1", sans-serif;
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .lending-page-for {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .lending-page-for {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .portfolio-parent {
-    display: flex;
+
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-21xl);
     max-width: 100%;
+}
+
+.portfolio {
+    font-family: "Gothic A1", sans-serif;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 104%;
+    letter-spacing: 0.1em;
+}
+
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .portfolio {
+        font-size: 24px;
+        line-height: 120%;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .portfolio {
+        font-size: 24px;
+        line-height: 120%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .lending-page-for {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .lending-page-for {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .frame-child,
@@ -829,18 +1530,8 @@ body {
     width: 197px;
 }
 
-.frame-container {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 411px;
-    gap: var(--gap-xl);
-    max-width: 100%;
-}
 
-.frame-group,
+
 .frame-parent {
     display: flex;
     justify-content: flex-start;
@@ -852,7 +1543,37 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 106px;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .frame-group {
+        flex-direction: column;
+        /* Изменяем направление flex на вертикальное */
+        align-items: center;
+        /* Выравниваем элементы по центру по вертикали */
+        gap: 20px;
+        /* Изменяем расстояние между элементами */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .frame-group {
+        flex-direction: column;
+        /* Изменяем направление flex на вертикальное */
+        align-items: center;
+        /* Выравниваем элементы по центру по вертикали */
+        gap: 20px;
+        /* Изменяем расстояние между элементами */
+    }
+}
+
+
+
 
 .frame-parent {
     width: 1240px;
@@ -924,18 +1645,35 @@ body {
 
 
 .contact-form {
+    font-family: "Gothic A1", sans-serif;
     margin: 0;
+    position: relative;
+    display: inline-block;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 104%;
     letter-spacing: 0.1em;
-    line-height: 50px;
-    font-weight: 400;
-    font-family: "Gothic A1", sans-serif;
-    position: relative;
-    letter-spacing: 0.1em;
-    display: inline-block;
 
+
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .contact-form {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 120%;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .contact-form {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 120%;
+    }
 }
 
 .form {
@@ -943,10 +1681,49 @@ body {
     font-family: "Gothic A1", sans-serif;
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 230px;
+        margin: 0 auto;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .form {
+
+        width: 230px;
+
+    }
+}
+
+
+
 .form__group {
     margin-bottom: 40px;
 
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .form__group {
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .form__group {
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+}
+
 
 .form__group input,
 .form__group label,
@@ -954,6 +1731,30 @@ body {
     display: block;
     width: 100%;
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+
+    .form__group input,
+    .form__group textarea,
+    .form__group label {
+        margin: 0 auto;
+        width: 230px;
+        /* Измените ширину по вашему усмотрению для планшетов */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+
+    .form__group input,
+    .form__group textarea,
+    .form__group label {
+        width: 230px;
+
+    }
+}
+
 
 .form__group input {
     height: 52px;
@@ -965,15 +1766,37 @@ body {
     border-radius: 10px;
     border: 1px solid var(--color);
     width: 100%;
-    /* изменено */
     color: var(--color);
     font-size: 12px;
 }
+
+
+
+
 
 .form__group label {
     margin-bottom: 5px;
     font-size: 12px;
 }
+
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .form__group label {
+        font-size: 10px;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .form__group label {
+        font-size: 10px;
+
+    }
+}
+
+
 
 .form__submit-button button {
     border: 1px solid var(--color);
@@ -1037,21 +1860,61 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 80px;
-    min-width: 527px;
-    max-width: 100%;
+
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .container-frame {
+        margin: 0 auto;
+        width: 100%;
+        gap: 20px;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .container-frame {
+
+        width: 100%;
+        gap: 30px;
+
+    }
+}
 
 .consultations-with-me {
     margin: 0;
     align-self: stretch;
     position: relative;
-
-    letter-spacing: 0.1em;
-    line-height: 26px;
     font-weight: 400;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    line-height: 26px;
+    font-family: "Gothic A1", sans-serif;
 
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .consultations-with-me {
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .consultations-with-me {
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+}
+
+
 
 .price-and-consult-frame {
     width: 398px;
@@ -1063,6 +1926,32 @@ body {
     max-width: 100%;
 }
 
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .price-and-consult-frame {
+        margin-top: 20px;
+        width: 100%;
+
+        gap: 20px;
+
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .price-and-consult-frame {
+        margin-top: 20px;
+        width: 100%;
+
+        gap: 20px;
+
+    }
+}
+
+
+
+
+
 .design-prices-frame {
     align-self: stretch;
     height: 295px;
@@ -1073,6 +1962,24 @@ body {
 
 }
 
+
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .design-prices-frame {
+        height: auto;
+        /* Изменение высоты для планшетов (пример) */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .design-prices-frame {
+        height: auto;
+        /* Изменение высоты для мобильных устройств (пример) */
+    }
+}
+
 .affordable-pricing-frame,
 .free-consultation-frame {
 
@@ -1081,10 +1988,37 @@ body {
     max-width: 100%;
 }
 
+
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .design-prices-frame {
+        height: 200px;
+        /* Пример уменьшенной высоты для мобильных устройств */
+        /* Дополнительные стили для мобильных устройств (при необходимости) */
+    }
+}
+
+
+
 .free-consultation-frame {
     align-self: stretch;
     gap: var(--gap-117xl);
 }
+
+
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .free-consultation-frame {
+        gap: var(--gap-xs);
+        /* Пример изменения зазора для мобильных устройств */
+        /* Дополнительные стили для мобильных устройств (при необходимости) */
+    }
+}
+
+
+
 
 .affordable-pricing-frame {
     width: 503px;
@@ -1092,6 +2026,29 @@ body {
     min-height: 643px;
 
 }
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .affordable-pricing-frame {
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        /* Дополнительные стили для планшетов (при необходимости) */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .affordable-pricing-frame {
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        /* Дополнительные стили для мобильных устройств (при необходимости) */
+    }
+}
+
+
+
 
 .portfolio-3 {
     width: 100%;
@@ -1111,4 +2068,26 @@ body {
     color: var(--color);
     font-family: var(--font);
     transition: transform 0.5s ease-in-out;
+}
+
+/* Медиа-запрос для планшетов */
+@media only screen and (max-width: 768px) {
+    .portfolio-3 {
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 20px 100px;
+        justify-content: flex-start;
+        /* Дополнительные стили для планшетов (при необходимости) */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .portfolio-3 {
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px 100px;
+        justify-content: flex-start;
+        /* Дополнительные стили для мобильных устройств (при необходимости) */
+    }
 }
