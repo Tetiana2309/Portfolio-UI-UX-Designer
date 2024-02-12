@@ -95,7 +95,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .frame-a {
         flex-direction: column;
         align-items: center;
@@ -139,7 +139,7 @@ body {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .web-magic {
         font-size: 36px;
         line-height: 110%;
@@ -185,8 +185,7 @@ body {
 
 
 
-
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .bringing-ideas-to {
         font-size: 36px;
         margin-left: 10px;
@@ -225,7 +224,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
 
     .frame-d {
         flex-direction: column;
@@ -243,7 +242,7 @@ body {
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .frame-d {
         flex-direction: column;
@@ -255,7 +254,7 @@ body {
 
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .web-magic-frame {
         display: flex;
         flex-direction: column;
@@ -296,7 +295,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .frame-d {
         width: calc(100% - 20px);
         /* Установите отступ от края на ваш выбор */
@@ -332,10 +331,6 @@ body {
     }
 }
 
-
-
-
-
 .web-magic-frame {
     width: 1240px;
     flex-direction: row;
@@ -349,7 +344,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .web-magic-frame {
         font-size: 40px;
         /* Измените размер шрифта по необходимости для планшетов */
@@ -443,7 +438,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
 
     .icon-behance,
     .icon-instagram,
@@ -700,7 +695,7 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .main {
         padding: 20px;
         /* Ваши стили для планшетов */
@@ -756,7 +751,7 @@ body {
 
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .about-me-title {
         font-size: 24px;
         line-height: 30px;
@@ -793,7 +788,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .list-about-me {
         width: 100%;
         margin-right: 0;
@@ -825,7 +820,7 @@ body {
     align-items: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .frame-greetings {
         flex-direction: column;
         align-items: flex-start;
@@ -867,7 +862,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .frame-greetings {
         width: 100%;
         /* Ширина 100% для полного заполнения экрана на планшетах */
@@ -903,7 +898,7 @@ body {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .frame-greetings {
         width: 100%;
         /* Ширина 100% для полного заполнения экрана на планшетах */
@@ -955,7 +950,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .about-me {
         flex-direction: column;
         align-items: center;
@@ -993,7 +988,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .about-me-title {
         font-size: 24px;
         line-height: 120%;
@@ -1029,7 +1024,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
 
     .greetings-to-you,
     .i-am-inspired,
@@ -1086,7 +1081,7 @@ body {
 
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .list-about-me {
         margin-right: 10px;
         /* Уменьшаем отступ справа для планшетов */
@@ -1122,7 +1117,7 @@ body {
 
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .list-about-me>div {
         margin-bottom: 10px;
         /* Измените отступ для планшетов по вашему усмотрению */
@@ -1156,7 +1151,7 @@ body {
 
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .container {
         gap: 0;
         width: 100%;
@@ -1164,6 +1159,25 @@ body {
         /* Изменение направления flex контейнера на вертикальное */
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+    .container {
+        gap: 30px;
+        margin: 0;
+    }
+
+    .about-me {
+        padding: 30px;
+    }
+
+    .frame-greetings {
+        gap: 0;
+    }
+
+}
+
+
+
 
 /* Медиа-запрос для мобильных устройств */
 @media only screen and (max-width: 479px) {
@@ -1293,7 +1307,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .subframe-foto {
         height: auto;
         flex-direction: column;
@@ -1404,7 +1418,7 @@ body {
 
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .my-services1 {
         font-size: 24px;
         line-height: 120%;
@@ -1431,7 +1445,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .affordable-web-design {
         font-size: 14px;
         line-height: 24px;
@@ -1459,7 +1473,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .my-services-label {
         flex-direction: column;
         /* Изменяем направление flex на вертикальное */
@@ -1530,7 +1544,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .creating-websites-from {
         font-size: 14px;
         line-height: 24px;
@@ -1641,8 +1655,7 @@ body {
     color: var(--color-white);
 }
 
-/* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .creating-frame {
         width: 100%;
         /* Занимает 100% ширины экрана */
@@ -1771,7 +1784,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .lending-page-for {
         font-size: 14px;
         line-height: 24px;
@@ -1808,7 +1821,7 @@ body {
 
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
     .portfolio {
         font-size: 24px;
         line-height: 120%;
@@ -2335,7 +2348,7 @@ body {
 
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .design-prices-frame {
         height: 200px;
         /* Пример уменьшенной высоты для мобильных устройств */
