@@ -45,7 +45,7 @@ body {
 }
 
 /* Медиа-запрос для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (max-width: 768px) {
 
     .tetiana-varzonova,
     .uiux-designer {
@@ -57,7 +57,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
     .tetiana-varzonova,
     .uiux-designer {
@@ -69,7 +69,16 @@ body {
 }
 
 
+@media only screen and (max-width: 479px) {
 
+    .tetiana-varzonova,
+    .uiux-designer {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+}
 
 
 
@@ -96,7 +105,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .frame-a {
         flex-direction: column;
         align-items: center;
@@ -105,6 +114,14 @@ body {
     }
 }
 
+@media only screen and (max-width: 479px) {
+    .frame-a {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
 
 
 .web-magic {
@@ -132,7 +149,15 @@ body {
 
 
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .web-magic {
+        font-size: 36px;
+        line-height: 110%;
+
+    }
+}
+
+@media only screen and (max-width: 479px) {
     .web-magic {
         font-size: 36px;
         line-height: 110%;
@@ -172,7 +197,16 @@ body {
 
 
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
+    .bringing-ideas-to {
+        font-size: 36px;
+        line-height: 110%;
+        margin-left: 10px;
+
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .bringing-ideas-to {
         font-size: 36px;
         line-height: 110%;
@@ -200,7 +234,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 
     .frame-d {
         flex-direction: column;
@@ -208,6 +242,17 @@ body {
     }
 
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .frame-d {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
 
 /* Медиа-запрос для планшетов */
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
@@ -263,7 +308,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     .frame-d {
         width: calc(100% - 20px);
         /* Установите отступ от края на ваш выбор */
@@ -274,6 +319,21 @@ body {
         /* Другие стили для мобильных устройств, если необходимо */
     }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .frame-d {
+        width: calc(100% - 20px);
+        /* Установите отступ от края на ваш выбор */
+        margin-left: 10px;
+        /* Половина отступа для выравнивания заголовков */
+        margin-right: 10px;
+        /* Половина отступа для выравнивания заголовков */
+        /* Другие стили для мобильных устройств, если необходимо */
+    }
+}
+
+
+
 
 
 .web-magic-frame {
@@ -297,7 +357,14 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
+    .web-magic-frame {
+        font-size: 32px;
+        /* Измените размер шрифта по необходимости для мобильных устройств */
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .web-magic-frame {
         font-size: 32px;
         /* Измените размер шрифта по необходимости для мобильных устройств */
@@ -388,7 +455,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 
     .icon-behance,
     .icon-instagram,
@@ -399,6 +466,16 @@ body {
     }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .icon-behance,
+    .icon-instagram,
+    .icon-linkedin {
+        height: 32px;
+        width: 32px;
+        /* Дополнительные стили или изменения по необходимости */
+    }
+}
 
 
 
@@ -536,7 +613,39 @@ body {
 
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
+    .social-button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links-frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        /* Уменьшаем отступ между иконками */
+    }
+
+    .knopka_povorota {
+        margin-top: 10px;
+        /* Добавляем отступ между иконками и кнопкой */
+    }
+
+    .con-btn {
+        margin-top: 10px;
+        /* Добавляем отступ сверху для кнопки */
+    }
+
+    /* Позиционируем иконки над кнопкой */
+    .social-link-frame {
+        order: -1;
+    }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .social-button {
         flex-direction: column;
         align-items: center;
@@ -572,7 +681,6 @@ body {
 
 
 
-
 .main {
     display: flex;
     align-items: center;
@@ -600,12 +708,23 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     .main {
         padding: 10px;
         /* Ваши стили для мобильных устройств */
     }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .main {
+        padding: 10px;
+        /* Ваши стили для мобильных устройств */
+    }
+}
+
+
+
+
 
 /*==============ABOUT ME================*/
 
@@ -645,7 +764,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .about-me-title {
         font-size: 20px;
         line-height: 20px;
@@ -653,6 +772,18 @@ body {
         /* Добавляем отступ снизу в мобильной версии */
     }
 }
+
+@media only screen and (max-width: 479px) {
+    .about-me-title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        /* Добавляем отступ снизу в мобильной версии */
+    }
+}
+
+
+
 
 .list-about-me {
     margin-right: 312px;
@@ -671,7 +802,15 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .list-about-me {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 479px) {
     .list-about-me {
         width: 100%;
         margin-right: 0;
@@ -698,7 +837,7 @@ body {
 }
 
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .frame-greetings {
         flex-direction: column;
         align-items: center;
@@ -709,6 +848,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 479px) {
+    .frame-greetings {
+        flex-direction: column;
+        align-items: center;
+
+        /* Установите желаемый размер зазора между элементами */
+        min-width: 100%;
+        /* Ширина минимальная на весь экран */
+    }
+}
 
 
 .frame-greetings {
@@ -727,7 +876,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .frame-greetings {
 
         width: 100%;
@@ -735,6 +884,13 @@ body {
     }
 }
 
+@media only screen and (max-width: 479px) {
+    .frame-greetings {
+
+        width: 100%;
+        /* Ширина 100% для полного заполнения экрана на мобильных устройствах */
+    }
+}
 
 
 .frame-greetings {
@@ -758,7 +914,7 @@ body {
 }
 
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .frame-greetings {
         width: 100%;
         /* Ширина 100% для полного заполнения экрана на мобильных устройствах */
@@ -767,6 +923,19 @@ body {
         gap: 0;
     }
 }
+
+@media only screen and (max-width: 479px) {
+    .frame-greetings {
+
+        /* Ширина 100% для полного заполнения экрана на мобильных устройствах */
+        min-width: auto;
+        /* Сброс минимальной ширины */
+        gap: 0;
+    }
+}
+
+
+
 
 .about-me {
     width: 100%;
@@ -796,13 +965,19 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .about-me {
         padding: 40px 20px;
         justify-content: center;
     }
 }
 
+@media only screen and (max-width: 479px) {
+    .about-me {
+        padding: 40px 20px;
+        justify-content: center;
+    }
+}
 
 
 .about-me-title {
@@ -826,7 +1001,14 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .about-me-title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
     .about-me-title {
         font-size: 24px;
         line-height: 120%;
@@ -857,7 +1039,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
     .greetings-to-you,
     .i-am-inspired,
@@ -875,12 +1057,33 @@ body {
     }
 }
 
+@media only screen and (max-width: 479px) {
+
+    .greetings-to-you,
+    .i-am-inspired,
+    .my-experience-is {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 1.4;
+        margin-bottom: 5px;
+        width: 350px;
+        box-sizing: border-box;
+        font-family: "Gothic A1", sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
 .my-experience-is {
     height: 130px;
     display: inline-block;
 }
 
-.list-about-me {}
 
 /* Медиа-запрос для планшетов */
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
@@ -891,7 +1094,17 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
+    .list-about-me {
+        width: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 5px;
+        /* Уменьшаем отступ справа для мобильных устройств */
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .list-about-me {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -899,6 +1112,9 @@ body {
         /* Уменьшаем отступ справа для мобильных устройств */
     }
 }
+
+
+
 
 .list-about-me>div {
     margin-bottom: 30px;
@@ -914,12 +1130,23 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     .list-about-me>div {
         margin-bottom: 5px;
         /* Измените отступ для мобильных устройств по вашему усмотрению */
     }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .list-about-me>div {
+        margin-bottom: 5px;
+        /* Измените отступ для мобильных устройств по вашему усмотрению */
+    }
+}
+
+
+
+
 
 .container {
     display: flex;
@@ -939,13 +1166,22 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     .container {
+        width: 479px;
+        gap: 0;
         flex-direction: column;
         /* Изменение направления flex контейнера на вертикальное */
     }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        gap: 0;
+        flex-direction: column;
+        /* Изменение направления flex контейнера на вертикальное */
+    }
+}
 
 
 
@@ -957,14 +1193,24 @@ body {
 /* Медиа-запрос для планшетов */
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
     .subframe-foto {
+
         flex: 1;
         /* Сохранить текущее значение flex для планшетов */
     }
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     .subframe-foto {
+
+        flex: 1;
+        /* Сохранить текущее значение flex для мобильных устройств */
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .subframe-foto {
+
         flex: 1;
         /* Сохранить текущее значение flex для мобильных устройств */
     }
@@ -994,7 +1240,24 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
+
+
+
+    .foto-icon {
+        width: 300px;
+        /* Сделать изображение 100% ширины в пределах родительского контейнера */
+        height: 300px;
+        /* Автоматическая высота, чтобы сохранить пропорции изображения */
+        object-fit: cover;
+        /* Заполнить контейнер, сохраняя пропорции */
+
+
+
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .foto-icon {
         width: 300px;
         /* Сделать изображение 100% ширины в пределах родительского контейнера */
@@ -1004,9 +1267,9 @@ body {
         /* Заполнить контейнер, сохраняя пропорции */
         align-items: center;
         justify-content: center;
+
     }
 }
-
 
 
 
@@ -1043,8 +1306,10 @@ body {
     }
 }
 
-/* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .subframe-foto {
         height: auto;
         flex-direction: column;
@@ -1057,6 +1322,15 @@ body {
     }
 }
 
+@media only screen and (max-width: 479px) {
+    .subframe-foto {
+
+
+        justify-content: center;
+
+
+    }
+}
 
 
 
@@ -1138,7 +1412,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .my-services1 {
         font-size: 24px;
         line-height: 120%;
@@ -1165,7 +1439,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .affordable-web-design {
         font-size: 14px;
         line-height: 24px;
@@ -1195,7 +1469,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .my-services-label {
         flex-direction: column;
         /* Изменяем направление flex на вертикальное */
@@ -1264,7 +1538,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .creating-websites-from {
         font-size: 14px;
         line-height: 24px;
@@ -1383,7 +1657,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .creating-frame {
         width: 100%;
         /* Занимает 100% ширины экрана */
@@ -1505,7 +1779,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .lending-page-for {
         font-size: 14px;
         line-height: 24px;
@@ -1542,7 +1816,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .portfolio {
         font-size: 24px;
         line-height: 120%;
@@ -1567,7 +1841,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .lending-page-for {
         font-size: 14px;
         line-height: 24px;
@@ -1631,7 +1905,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .frame-group {
         flex-direction: column;
         /* Изменяем направление flex на вертикальное */
@@ -1738,7 +2012,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .contact-form {
         margin-bottom: 20px;
         font-size: 24px;
@@ -1761,7 +2035,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .form {
 
         width: 230px;
@@ -1786,7 +2060,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .form__group {
         align-items: center;
         margin-bottom: 10px;
@@ -1815,7 +2089,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
     .form__group input,
     .form__group textarea,
@@ -1859,7 +2133,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .form__group label {
         font-size: 10px;
 
@@ -1944,7 +2218,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .container-frame {
 
         width: 100%;
@@ -1976,7 +2250,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .consultations-with-me {
         font-size: 14px;
         line-height: 24px;
@@ -2008,7 +2282,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .price-and-consult-frame {
         margin-top: 20px;
         width: 100%;
@@ -2043,7 +2317,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .design-prices-frame {
         height: auto;
         /* Изменение высоты для мобильных устройств (пример) */
@@ -2079,7 +2353,7 @@ body {
 
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .free-consultation-frame {
         gap: var(--gap-xs);
         /* Пример изменения зазора для мобильных устройств */
@@ -2108,7 +2382,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .affordable-pricing-frame {
         width: 100%;
         min-width: 100%;
@@ -2152,7 +2426,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .portfolio-3 {
         align-items: center;
         flex-direction: column;
